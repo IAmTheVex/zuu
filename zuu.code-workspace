@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "packages/bootstrap"
+		},
+		{
+			"path": "packages/__"
+		},
+		{
+			"path": "packages/ferret"
+		},
+		{
+			"path": "packages/mink"
+		},
+		{
+			"path": "packages/mirror"
+		},
+		{
+			"path": "packages/owl"
+		},
+		{
+			"path": "packages/vet"
+		}
+	],
+	"settings": {}
+}

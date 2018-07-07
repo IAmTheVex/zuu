@@ -1,1 +1,9 @@
 node_modules/
+build/
+packages/__
+packages/mink
+packages/ferret
+packages/owl
+*.sqlite
+.DS_Store
+scripts/

@@ -1,725 +1,221 @@
-0 silly input []
-1 silly flags { _: [ 'bootstrap' ],
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ],
 1 silly flags   'reject-cycles': false,
 1 silly flags   rejectCycles: false,
-1 silly flags   args: [] }
+1 silly flags   'skip-git': true,
+1 silly flags   skipGit: true }
 2 verbose rootPath /Users/vex/p/zuu
 3 info version 2.11.0
-4 silly existsSync /Users/vex/p/zuu/VERSION
-5 silly initialize attempt
-6 silly npmConfig { registry: undefined,
-6 silly npmConfig   npmClient: undefined,
-6 silly npmConfig   npmClientArgs: undefined,
-6 silly npmConfig   mutex: undefined }
-7 silly initialize success
-8 silly execute attempt
-9 info Bootstrapping 2 packages
-10 info lifecycle preinstall
-11 silly runScript preinstall @zuu/mirror
-12 silly @zuu/mirror
-13 silly runScript preinstall @zuu/ferret
-14 silly @zuu/ferret
-15 silly hasMatchingDependency @zuu/ferret @zuu/mirror
-16 silly hasDependencyInstalled @zuu/ferret @types/chai
-17 silly dependencyIsSatisfied [ '@types/chai',
-17 silly dependencyIsSatisfied   '^4.1.2',
-17 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-18 verbose dependencyIsSatisfied @types/chai false
-19 silly hasDependencyInstalled @zuu/ferret @types/chai-as-promised
-20 silly dependencyIsSatisfied [ '@types/chai-as-promised',
-20 silly dependencyIsSatisfied   '7.1.0',
-20 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-21 verbose dependencyIsSatisfied @types/chai-as-promised false
-22 silly hasDependencyInstalled @zuu/ferret @types/debug
-23 silly dependencyIsSatisfied [ '@types/debug',
-23 silly dependencyIsSatisfied   '0.0.30',
-23 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-24 verbose dependencyIsSatisfied @types/debug false
-25 silly hasDependencyInstalled @zuu/ferret @types/mocha
-26 silly dependencyIsSatisfied [ '@types/mocha',
-26 silly dependencyIsSatisfied   '^5.0.0',
-26 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-27 verbose dependencyIsSatisfied @types/mocha false
-28 silly hasDependencyInstalled @zuu/ferret @types/node
-29 silly dependencyIsSatisfied [ '@types/node',
-29 silly dependencyIsSatisfied   '^9.6.0',
-29 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-30 verbose dependencyIsSatisfied @types/node false
-31 silly hasDependencyInstalled @zuu/ferret @types/rimraf
-32 silly dependencyIsSatisfied [ '@types/rimraf',
-32 silly dependencyIsSatisfied   '^2.0.2',
-32 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-33 verbose dependencyIsSatisfied @types/rimraf false
-34 silly hasDependencyInstalled @zuu/ferret @types/sinon
-35 silly dependencyIsSatisfied [ '@types/sinon',
-35 silly dependencyIsSatisfied   '^4.3.0',
-35 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-36 verbose dependencyIsSatisfied @types/sinon false
-37 silly hasDependencyInstalled @zuu/ferret @types/source-map-support
-38 silly dependencyIsSatisfied [ '@types/source-map-support',
-38 silly dependencyIsSatisfied   '^0.4.0',
-38 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-39 verbose dependencyIsSatisfied @types/source-map-support false
-40 silly hasDependencyInstalled @zuu/ferret chai
-41 silly dependencyIsSatisfied [ 'chai',
-41 silly dependencyIsSatisfied   '^3.5.0',
-41 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-42 verbose dependencyIsSatisfied chai false
-43 silly hasDependencyInstalled @zuu/mirror chai
-44 silly dependencyIsSatisfied [ 'chai',
-44 silly dependencyIsSatisfied   '^4.1.2',
-44 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/mirror/node_modules' ]
-45 verbose dependencyIsSatisfied chai false
-46 silly hasDependencyInstalled @zuu/ferret chai-as-promised
-47 silly dependencyIsSatisfied [ 'chai-as-promised',
-47 silly dependencyIsSatisfied   '^7.1.1',
-47 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-48 verbose dependencyIsSatisfied chai-as-promised false
-49 silly hasDependencyInstalled @zuu/ferret del
-50 silly dependencyIsSatisfied [ 'del',
-50 silly dependencyIsSatisfied   '^3.0.0',
-50 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-51 verbose dependencyIsSatisfied del false
-52 silly hasDependencyInstalled @zuu/ferret gulp
-53 silly dependencyIsSatisfied [ 'gulp',
-53 silly dependencyIsSatisfied   '^3.9.1',
-53 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-54 verbose dependencyIsSatisfied gulp false
-55 silly hasDependencyInstalled @zuu/ferret gulp-istanbul
-56 silly dependencyIsSatisfied [ 'gulp-istanbul',
-56 silly dependencyIsSatisfied   '^1.1.3',
-56 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-57 verbose dependencyIsSatisfied gulp-istanbul false
-58 silly hasDependencyInstalled @zuu/ferret gulp-mocha
-59 silly dependencyIsSatisfied [ 'gulp-mocha',
-59 silly dependencyIsSatisfied   '^5.0.0',
-59 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-60 verbose dependencyIsSatisfied gulp-mocha false
-61 silly hasDependencyInstalled @zuu/ferret gulp-rename
-62 silly dependencyIsSatisfied [ 'gulp-rename',
-62 silly dependencyIsSatisfied   '^1.2.2',
-62 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-63 verbose dependencyIsSatisfied gulp-rename false
-64 silly hasDependencyInstalled @zuu/ferret gulp-replace
-65 silly dependencyIsSatisfied [ 'gulp-replace',
-65 silly dependencyIsSatisfied   '^0.6.1',
-65 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-66 verbose dependencyIsSatisfied gulp-replace false
-67 silly hasDependencyInstalled @zuu/ferret gulp-shell
-68 silly dependencyIsSatisfied [ 'gulp-shell',
-68 silly dependencyIsSatisfied   '^0.6.5',
-68 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-69 verbose dependencyIsSatisfied gulp-shell false
-70 silly hasDependencyInstalled @zuu/ferret gulp-sourcemaps
-71 silly dependencyIsSatisfied [ 'gulp-sourcemaps',
-71 silly dependencyIsSatisfied   '^2.6.4',
-71 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-72 verbose dependencyIsSatisfied gulp-sourcemaps false
-73 silly hasDependencyInstalled @zuu/ferret gulp-tslint
-74 silly dependencyIsSatisfied [ 'gulp-tslint',
-74 silly dependencyIsSatisfied   '^8.1.3',
-74 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-75 verbose dependencyIsSatisfied gulp-tslint false
-76 silly hasDependencyInstalled @zuu/ferret gulp-typescript
-77 silly dependencyIsSatisfied [ 'gulp-typescript',
-77 silly dependencyIsSatisfied   '^4.0.2',
-77 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-78 verbose dependencyIsSatisfied gulp-typescript false
-79 silly hasDependencyInstalled @zuu/ferret gulpclass
-80 silly dependencyIsSatisfied [ 'gulpclass',
-80 silly dependencyIsSatisfied   '^0.1.2',
-80 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-81 verbose dependencyIsSatisfied gulpclass false
-82 silly hasDependencyInstalled @zuu/ferret husky
-83 silly dependencyIsSatisfied [ 'husky',
-83 silly dependencyIsSatisfied   '^0.14.3',
-83 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-84 verbose dependencyIsSatisfied husky false
-85 silly hasDependencyInstalled @zuu/ferret lint-staged
-86 silly dependencyIsSatisfied [ 'lint-staged',
-86 silly dependencyIsSatisfied   '^7.0.0',
-86 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-87 verbose dependencyIsSatisfied lint-staged false
-88 silly hasDependencyInstalled @zuu/ferret mocha
-89 silly dependencyIsSatisfied [ 'mocha',
-89 silly dependencyIsSatisfied   '^5.0.5',
-89 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-90 verbose dependencyIsSatisfied mocha false
-91 silly hasDependencyInstalled @zuu/mirror mocha
-92 silly dependencyIsSatisfied [ 'mocha',
-92 silly dependencyIsSatisfied   '^5.1.1',
-92 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/mirror/node_modules' ]
-93 verbose dependencyIsSatisfied mocha false
-94 silly hasDependencyInstalled @zuu/ferret mongodb
-95 silly dependencyIsSatisfied [ 'mongodb',
-95 silly dependencyIsSatisfied   '^3.0.5',
-95 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-96 verbose dependencyIsSatisfied mongodb false
-97 silly hasDependencyInstalled @zuu/ferret mssql
-98 silly dependencyIsSatisfied [ 'mssql',
-98 silly dependencyIsSatisfied   '^4.1.0',
-98 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-99 verbose dependencyIsSatisfied mssql false
-100 silly hasDependencyInstalled @zuu/ferret mysql
-101 silly dependencyIsSatisfied [ 'mysql',
-101 silly dependencyIsSatisfied   '^2.15.0',
-101 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-102 verbose dependencyIsSatisfied mysql false
-103 silly hasDependencyInstalled @zuu/ferret mysql2
-104 silly dependencyIsSatisfied [ 'mysql2',
-104 silly dependencyIsSatisfied   '^1.5.3',
-104 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-105 verbose dependencyIsSatisfied mysql2 false
-106 silly hasDependencyInstalled @zuu/ferret pg
-107 silly dependencyIsSatisfied [ 'pg',
-107 silly dependencyIsSatisfied   '^7.4.0',
-107 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-108 verbose dependencyIsSatisfied pg false
-109 silly hasDependencyInstalled @zuu/ferret redis
-110 silly dependencyIsSatisfied [ 'redis',
-110 silly dependencyIsSatisfied   '^2.8.0',
-110 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-111 verbose dependencyIsSatisfied redis false
-112 silly hasDependencyInstalled @zuu/ferret remap-istanbul
-113 silly dependencyIsSatisfied [ 'remap-istanbul',
-113 silly dependencyIsSatisfied   '^0.11.0',
-113 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-114 verbose dependencyIsSatisfied remap-istanbul false
-115 silly hasDependencyInstalled @zuu/ferret rimraf
-116 silly dependencyIsSatisfied [ 'rimraf',
-116 silly dependencyIsSatisfied   '^2.6.2',
-116 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-117 verbose dependencyIsSatisfied rimraf false
-118 silly hasDependencyInstalled @zuu/ferret sinon
-119 silly dependencyIsSatisfied [ 'sinon',
-119 silly dependencyIsSatisfied   '^2.4.1',
-119 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-120 verbose dependencyIsSatisfied sinon false
-121 silly hasDependencyInstalled @zuu/ferret sinon-chai
-122 silly dependencyIsSatisfied [ 'sinon-chai',
-122 silly dependencyIsSatisfied   '^2.13.0',
-122 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-123 verbose dependencyIsSatisfied sinon-chai false
-124 silly hasDependencyInstalled @zuu/ferret source-map-support
-125 silly dependencyIsSatisfied [ 'source-map-support',
-125 silly dependencyIsSatisfied   '^0.5.4',
-125 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-126 verbose dependencyIsSatisfied source-map-support false
-127 silly hasDependencyInstalled @zuu/ferret sql.js
-128 silly dependencyIsSatisfied [ 'sql.js',
-128 silly dependencyIsSatisfied   '^0.5.0',
-128 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-129 verbose dependencyIsSatisfied sql.js false
-130 silly hasDependencyInstalled @zuu/ferret sqlite3
-131 silly dependencyIsSatisfied [ 'sqlite3',
-131 silly dependencyIsSatisfied   '^4.0.0',
-131 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-132 verbose dependencyIsSatisfied sqlite3 false
-133 silly hasDependencyInstalled @zuu/ferret ts-node
-134 silly dependencyIsSatisfied [ 'ts-node',
-134 silly dependencyIsSatisfied   '^5.0.0',
-134 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-135 verbose dependencyIsSatisfied ts-node false
-136 silly hasDependencyInstalled @zuu/ferret tslint
-137 silly dependencyIsSatisfied [ 'tslint',
-137 silly dependencyIsSatisfied   '^5.9.1',
-137 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-138 verbose dependencyIsSatisfied tslint false
-139 silly hasDependencyInstalled @zuu/ferret tslint-stylish
-140 silly dependencyIsSatisfied [ 'tslint-stylish',
-140 silly dependencyIsSatisfied   '^2.1.0',
-140 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-141 verbose dependencyIsSatisfied tslint-stylish false
-142 silly hasDependencyInstalled @zuu/ferret typescript
-143 silly dependencyIsSatisfied [ 'typescript',
-143 silly dependencyIsSatisfied   '^2.8.1',
-143 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-144 verbose dependencyIsSatisfied typescript false
-145 silly hasDependencyInstalled @zuu/mirror typescript
-146 silly dependencyIsSatisfied [ 'typescript',
-146 silly dependencyIsSatisfied   '^2.8.3',
-146 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/mirror/node_modules' ]
-147 verbose dependencyIsSatisfied typescript false
-148 silly hasDependencyInstalled @zuu/ferret app-root-path
-149 silly dependencyIsSatisfied [ 'app-root-path',
-149 silly dependencyIsSatisfied   '^2.0.1',
-149 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-150 verbose dependencyIsSatisfied app-root-path false
-151 silly hasDependencyInstalled @zuu/ferret buffer
-152 silly dependencyIsSatisfied [ 'buffer',
-152 silly dependencyIsSatisfied   '^5.1.0',
-152 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-153 verbose dependencyIsSatisfied buffer false
-154 silly hasDependencyInstalled @zuu/ferret chalk
-155 silly dependencyIsSatisfied [ 'chalk',
-155 silly dependencyIsSatisfied   '^2.3.2',
-155 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-156 verbose dependencyIsSatisfied chalk false
-157 silly hasDependencyInstalled @zuu/ferret cli-highlight
-158 silly dependencyIsSatisfied [ 'cli-highlight',
-158 silly dependencyIsSatisfied   '^1.2.3',
-158 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-159 verbose dependencyIsSatisfied cli-highlight false
-160 silly hasDependencyInstalled @zuu/ferret debug
-161 silly dependencyIsSatisfied [ 'debug',
-161 silly dependencyIsSatisfied   '^3.1.0',
-161 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-162 verbose dependencyIsSatisfied debug false
-163 silly hasDependencyInstalled @zuu/ferret dotenv
-164 silly dependencyIsSatisfied [ 'dotenv',
-164 silly dependencyIsSatisfied   '^5.0.1',
-164 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-165 verbose dependencyIsSatisfied dotenv false
-166 silly hasDependencyInstalled @zuu/ferret glob
-167 silly dependencyIsSatisfied [ 'glob',
-167 silly dependencyIsSatisfied   '^7.1.2',
-167 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-168 verbose dependencyIsSatisfied glob false
-169 silly hasDependencyInstalled @zuu/ferret js-yaml
-170 silly dependencyIsSatisfied [ 'js-yaml',
-170 silly dependencyIsSatisfied   '^3.11.0',
-170 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-171 verbose dependencyIsSatisfied js-yaml false
-172 silly hasDependencyInstalled @zuu/ferret mkdirp
-173 silly dependencyIsSatisfied [ 'mkdirp',
-173 silly dependencyIsSatisfied   '^0.5.1',
-173 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-174 verbose dependencyIsSatisfied mkdirp false
-175 silly hasDependencyInstalled @zuu/ferret reflect-metadata
-176 silly dependencyIsSatisfied [ 'reflect-metadata',
-176 silly dependencyIsSatisfied   '^0.1.12',
-176 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-177 verbose dependencyIsSatisfied reflect-metadata false
-178 silly hasDependencyInstalled @zuu/mirror reflect-metadata
-179 silly dependencyIsSatisfied [ 'reflect-metadata',
-179 silly dependencyIsSatisfied   '^0.1.12',
-179 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/mirror/node_modules' ]
-180 verbose dependencyIsSatisfied reflect-metadata false
-181 silly hasDependencyInstalled @zuu/ferret xml2js
-182 silly dependencyIsSatisfied [ 'xml2js',
-182 silly dependencyIsSatisfied   '^0.4.17',
-182 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-183 verbose dependencyIsSatisfied xml2js false
-184 silly hasDependencyInstalled @zuu/ferret yargonaut
-185 silly dependencyIsSatisfied [ 'yargonaut',
-185 silly dependencyIsSatisfied   '^1.1.2',
-185 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-186 verbose dependencyIsSatisfied yargonaut false
-187 silly hasDependencyInstalled @zuu/ferret yargs
-188 silly dependencyIsSatisfied [ 'yargs',
-188 silly dependencyIsSatisfied   '^11.1.0',
-188 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/ferret/node_modules' ]
-189 verbose dependencyIsSatisfied yargs false
-190 silly hasDependencyInstalled @zuu/mirror coveralls
-191 silly dependencyIsSatisfied [ 'coveralls',
-191 silly dependencyIsSatisfied   '^3.0.0',
-191 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/mirror/node_modules' ]
-192 verbose dependencyIsSatisfied coveralls false
-193 silly hasDependencyInstalled @zuu/mirror istanbul
-194 silly dependencyIsSatisfied [ 'istanbul',
-194 silly dependencyIsSatisfied   '^0.4.5',
-194 silly dependencyIsSatisfied   '/Users/vex/p/zuu/packages/mirror/node_modules' ]
-195 verbose dependencyIsSatisfied istanbul false
-196 silly root dependencies []
-197 silly leaf dependencies {
-197 silly leaf dependencies   "@zuu/ferret": [
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "@types/chai@^4.1.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "@types/chai-as-promised@7.1.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "@types/debug@0.0.30",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "@types/mocha@^5.0.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "@types/node@^9.6.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "@types/rimraf@^2.0.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "@types/sinon@^4.3.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "@types/source-map-support@^0.4.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "chai@^3.5.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "chai-as-promised@^7.1.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "del@^3.0.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp@^3.9.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp-istanbul@^1.1.3",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp-mocha@^5.0.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp-rename@^1.2.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp-replace@^0.6.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp-shell@^0.6.5",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp-sourcemaps@^2.6.4",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp-tslint@^8.1.3",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulp-typescript@^4.0.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "gulpclass@^0.1.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "husky@^0.14.3",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "lint-staged@^7.0.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "mocha@^5.0.5",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "mongodb@^3.0.5",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "mssql@^4.1.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "mysql@^2.15.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "mysql2@^1.5.3",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "pg@^7.4.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "redis@^2.8.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "remap-istanbul@^0.11.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "rimraf@^2.6.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "sinon@^2.4.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "sinon-chai@^2.13.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "source-map-support@^0.5.4",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "sql.js@^0.5.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "sqlite3@^4.0.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "ts-node@^5.0.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "tslint@^5.9.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "tslint-stylish@^2.1.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "typescript@^2.8.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "app-root-path@^2.0.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "buffer@^5.1.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "chalk@^2.3.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "cli-highlight@^1.2.3",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "debug@^3.1.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "dotenv@^5.0.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "glob@^7.1.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "js-yaml@^3.11.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "mkdirp@^0.5.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "reflect-metadata@^0.1.12",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "xml2js@^0.4.17",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "yargonaut@^1.1.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "yargs@^11.1.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     }
-197 silly leaf dependencies   ],
-197 silly leaf dependencies   "@zuu/mirror": [
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "chai@^4.1.2",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "mocha@^5.1.1",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "typescript@^2.8.3",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "reflect-metadata@^0.1.12",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "coveralls@^3.0.0",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     },
-197 silly leaf dependencies     {
-197 silly leaf dependencies       "dependency": "istanbul@^0.4.5",
-197 silly leaf dependencies       "isSatisfied": false
-197 silly leaf dependencies     }
-197 silly leaf dependencies   ]
-197 silly leaf dependencies }
-198 info Installing external dependencies
-199 verbose actions 2 actions, concurrency 4
-200 silly installInDir ferret [ '@types/chai@^4.1.2',
-200 silly installInDir   '@types/chai-as-promised@7.1.0',
-200 silly installInDir   '@types/debug@0.0.30',
-200 silly installInDir   '@types/mocha@^5.0.0',
-200 silly installInDir   '@types/node@^9.6.0',
-200 silly installInDir   '@types/rimraf@^2.0.2',
-200 silly installInDir   '@types/sinon@^4.3.0',
-200 silly installInDir   '@types/source-map-support@^0.4.0',
-200 silly installInDir   'chai@^3.5.0',
-200 silly installInDir   'chai-as-promised@^7.1.1',
-200 silly installInDir   'del@^3.0.0',
-200 silly installInDir   'gulp@^3.9.1',
-200 silly installInDir   'gulp-istanbul@^1.1.3',
-200 silly installInDir   'gulp-mocha@^5.0.0',
-200 silly installInDir   'gulp-rename@^1.2.2',
-200 silly installInDir   'gulp-replace@^0.6.1',
-200 silly installInDir   'gulp-shell@^0.6.5',
-200 silly installInDir   'gulp-sourcemaps@^2.6.4',
-200 silly installInDir   'gulp-tslint@^8.1.3',
-200 silly installInDir   'gulp-typescript@^4.0.2',
-200 silly installInDir   'gulpclass@^0.1.2',
-200 silly installInDir   'husky@^0.14.3',
-200 silly installInDir   'lint-staged@^7.0.0',
-200 silly installInDir   'mocha@^5.0.5',
-200 silly installInDir   'mongodb@^3.0.5',
-200 silly installInDir   'mssql@^4.1.0',
-200 silly installInDir   'mysql@^2.15.0',
-200 silly installInDir   'mysql2@^1.5.3',
-200 silly installInDir   'pg@^7.4.0',
-200 silly installInDir   'redis@^2.8.0',
-200 silly installInDir   'remap-istanbul@^0.11.0',
-200 silly installInDir   'rimraf@^2.6.2',
-200 silly installInDir   'sinon@^2.4.1',
-200 silly installInDir   'sinon-chai@^2.13.0',
-200 silly installInDir   'source-map-support@^0.5.4',
-200 silly installInDir   'sql.js@^0.5.0',
-200 silly installInDir   'sqlite3@^4.0.0',
-200 silly installInDir   'ts-node@^5.0.0',
-200 silly installInDir   'tslint@^5.9.1',
-200 silly installInDir   'tslint-stylish@^2.1.0',
-200 silly installInDir   'typescript@^2.8.1',
-200 silly installInDir   'app-root-path@^2.0.1',
-200 silly installInDir   'buffer@^5.1.0',
-200 silly installInDir   'chalk@^2.3.2',
-200 silly installInDir   'cli-highlight@^1.2.3',
-200 silly installInDir   'debug@^3.1.0',
-200 silly installInDir   'dotenv@^5.0.1',
-200 silly installInDir   'glob@^7.1.2',
-200 silly installInDir   'js-yaml@^3.11.0',
-200 silly installInDir   'mkdirp@^0.5.1',
-200 silly installInDir   'reflect-metadata@^0.1.12',
-200 silly installInDir   'xml2js@^0.4.17',
-200 silly installInDir   'yargonaut@^1.1.2',
-200 silly installInDir   'yargs@^11.1.0' ]
-201 silly installInDir backup /Users/vex/p/zuu/packages/ferret/package.json
-202 silly rename [ '/Users/vex/p/zuu/packages/ferret/package.json',
-202 silly rename   '/Users/vex/p/zuu/packages/ferret/package.json.lerna_backup' ]
-203 silly installInDir mirror [ 'chai@^4.1.2',
-203 silly installInDir   'mocha@^5.1.1',
-203 silly installInDir   'typescript@^2.8.3',
-203 silly installInDir   'reflect-metadata@^0.1.12',
-203 silly installInDir   'coveralls@^3.0.0',
-203 silly installInDir   'istanbul@^0.4.5' ]
-204 silly installInDir backup /Users/vex/p/zuu/packages/mirror/package.json
-205 silly rename [ '/Users/vex/p/zuu/packages/mirror/package.json',
-205 silly rename   '/Users/vex/p/zuu/packages/mirror/package.json.lerna_backup' ]
-206 silly installInDir writing tempJson { dependencies:
-206 silly installInDir    { '@types/chai': '^4.1.2',
-206 silly installInDir      '@types/chai-as-promised': '7.1.0',
-206 silly installInDir      '@types/debug': '0.0.30',
-206 silly installInDir      '@types/mocha': '^5.0.0',
-206 silly installInDir      '@types/node': '^9.6.0',
-206 silly installInDir      '@types/rimraf': '^2.0.2',
-206 silly installInDir      '@types/sinon': '^4.3.0',
-206 silly installInDir      '@types/source-map-support': '^0.4.0',
-206 silly installInDir      chai: '^3.5.0',
-206 silly installInDir      'chai-as-promised': '^7.1.1',
-206 silly installInDir      del: '^3.0.0',
-206 silly installInDir      gulp: '^3.9.1',
-206 silly installInDir      'gulp-istanbul': '^1.1.3',
-206 silly installInDir      'gulp-mocha': '^5.0.0',
-206 silly installInDir      'gulp-rename': '^1.2.2',
-206 silly installInDir      'gulp-replace': '^0.6.1',
-206 silly installInDir      'gulp-shell': '^0.6.5',
-206 silly installInDir      'gulp-sourcemaps': '^2.6.4',
-206 silly installInDir      'gulp-tslint': '^8.1.3',
-206 silly installInDir      'gulp-typescript': '^4.0.2',
-206 silly installInDir      gulpclass: '^0.1.2',
-206 silly installInDir      husky: '^0.14.3',
-206 silly installInDir      'lint-staged': '^7.0.0',
-206 silly installInDir      mocha: '^5.0.5',
-206 silly installInDir      mongodb: '^3.0.5',
-206 silly installInDir      mssql: '^4.1.0',
-206 silly installInDir      mysql: '^2.15.0',
-206 silly installInDir      mysql2: '^1.5.3',
-206 silly installInDir      pg: '^7.4.0',
-206 silly installInDir      redis: '^2.8.0',
-206 silly installInDir      'remap-istanbul': '^0.11.0',
-206 silly installInDir      rimraf: '^2.6.2',
-206 silly installInDir      sinon: '^2.4.1',
-206 silly installInDir      'sinon-chai': '^2.13.0',
-206 silly installInDir      'source-map-support': '^0.5.4',
-206 silly installInDir      'sql.js': '^0.5.0',
-206 silly installInDir      sqlite3: '^4.0.0',
-206 silly installInDir      'ts-node': '^5.0.0',
-206 silly installInDir      tslint: '^5.9.1',
-206 silly installInDir      'tslint-stylish': '^2.1.0',
-206 silly installInDir      typescript: '^2.8.1',
-206 silly installInDir      'app-root-path': '^2.0.1',
-206 silly installInDir      buffer: '^5.1.0',
-206 silly installInDir      chalk: '^2.3.2',
-206 silly installInDir      'cli-highlight': '^1.2.3',
-206 silly installInDir      debug: '^3.1.0',
-206 silly installInDir      dotenv: '^5.0.1',
-206 silly installInDir      glob: '^7.1.2',
-206 silly installInDir      'js-yaml': '^3.11.0',
-206 silly installInDir      mkdirp: '^0.5.1',
-206 silly installInDir      'reflect-metadata': '^0.1.12',
-206 silly installInDir      xml2js: '^0.4.17',
-206 silly installInDir      yargonaut: '^1.1.2',
-206 silly installInDir      yargs: '^11.1.0' } }
-207 silly installInDir writing tempJson { dependencies:
-207 silly installInDir    { chai: '^4.1.2',
-207 silly installInDir      mocha: '^5.1.1',
-207 silly installInDir      typescript: '^2.8.3',
-207 silly installInDir      'reflect-metadata': '^0.1.12',
-207 silly installInDir      coveralls: '^3.0.0',
-207 silly installInDir      istanbul: '^0.4.5' } }
-208 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mirror' }
-209 silly installInDir [ 'npm', [ 'install' ] ]
-210 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/ferret' }
-211 silly installInDir [ 'npm', [ 'install' ] ]
-212 silly installInDir cleanup /Users/vex/p/zuu/packages/mirror/package.json
-213 silly renameSync [ '/Users/vex/p/zuu/packages/mirror/package.json.lerna_backup',
-213 silly renameSync   '/Users/vex/p/zuu/packages/mirror/package.json' ]
-214 verbose installed leaf @zuu/mirror
-215 error execute callback with error
-216 error Error: Command failed: npm install
-216 error npm WARN registry Using stale data from https://registry.npmjs.org/ because the host is inaccessible -- are you offline?
-216 error npm WARN registry Using stale package data from https://registry.npmjs.org/ due to a request error during revalidation.
-216 error npm ERR! code ENOTFOUND
-216 error npm ERR! errno ENOTFOUND
-216 error npm ERR! network request to https://registry.npmjs.org/chai failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
-216 error npm ERR! network This is a problem related to network connectivity.
-216 error npm ERR! network In most cases you are behind a proxy or have bad network settings.
-216 error npm ERR! network
-216 error npm ERR! network If you are behind a proxy, please make sure that the
-216 error npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
-216 error
-216 error npm ERR! A complete log of this run can be found in:
-216 error npm ERR!     /Users/vex/.npm/_logs/2018-06-30T13_17_42_033Z-debug.log
-216 error
-216 error     at Promise.all.then.arr (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-216 error     at <anonymous>
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/vex/p/zuu/VERSION
+7 silly initialize attempt
+8 info current version 4.0.1
+9 silly getUpdates
+10 info Checking for updated packages...
+11 silly hasTags
+12 verbose hasTags false
+13 info Comparing with initial commit.
+14 verbose updated __
+15 verbose updated @zuu/bootstrap
+16 verbose updated @zuu/ferret
+17 verbose updated @zuu/mink
+18 verbose updated @zuu/mirror
+19 verbose updated @zuu/owl
+20 verbose updated @zuu/vet
+21 info Checking for prereleased packages...
+22 silly collectDependents
+23 silly isPackageDependentOf __ __
+24 silly isPackageDependentOf @zuu/bootstrap __
+25 silly isPackageDependentOf @zuu/ferret __
+26 silly isPackageDependentOf @zuu/mirror __
+27 silly isPackageDependentOf @zuu/mink __
+28 silly isPackageDependentOf @zuu/mirror __
+29 silly isPackageDependentOf @zuu/owl __
+30 silly isPackageDependentOf @zuu/mirror __
+31 silly isPackageDependentOf @zuu/vet __
+32 silly isPackageDependentOf @zuu/mirror __
+33 silly isPackageDependentOf @zuu/vet __
+34 silly isPackageDependentOf @zuu/ferret __
+35 silly isPackageDependentOf @zuu/mink __
+36 silly isPackageDependentOf @zuu/mirror __
+37 silly isPackageDependentOf @zuu/owl __
+38 silly isPackageDependentOf @zuu/vet __
+39 silly isPackageDependentOf __ @zuu/bootstrap
+40 verbose dependent __ depends on @zuu/bootstrap
+41 silly isPackageDependentOf __ @zuu/ferret
+42 verbose dependent __ depends on @zuu/ferret
+43 silly isPackageDependentOf __ @zuu/mink
+44 verbose dependent __ depends on @zuu/mink
+45 silly isPackageDependentOf __ @zuu/mirror
+46 verbose dependent __ depends on @zuu/mirror
+47 silly isPackageDependentOf __ @zuu/owl
+48 verbose dependent __ depends on @zuu/owl
+49 silly isPackageDependentOf __ @zuu/vet
+50 verbose dependent __ depends on @zuu/vet
+51 silly isPackageDependentOf @zuu/bootstrap __
+52 silly isPackageDependentOf @zuu/bootstrap @zuu/bootstrap
+53 silly isPackageDependentOf @zuu/ferret @zuu/bootstrap
+54 silly isPackageDependentOf @zuu/mirror @zuu/bootstrap
+55 silly isPackageDependentOf @zuu/mink @zuu/bootstrap
+56 silly isPackageDependentOf @zuu/mirror @zuu/bootstrap
+57 silly isPackageDependentOf @zuu/owl @zuu/bootstrap
+58 silly isPackageDependentOf @zuu/mirror @zuu/bootstrap
+59 silly isPackageDependentOf @zuu/vet @zuu/bootstrap
+60 silly isPackageDependentOf @zuu/mirror @zuu/bootstrap
+61 silly isPackageDependentOf @zuu/vet @zuu/bootstrap
+62 silly isPackageDependentOf @zuu/bootstrap @zuu/ferret
+63 verbose dependent @zuu/bootstrap depends on @zuu/ferret
+64 silly isPackageDependentOf @zuu/bootstrap @zuu/mink
+65 verbose dependent @zuu/bootstrap depends on @zuu/mink
+66 silly isPackageDependentOf @zuu/bootstrap @zuu/mirror
+67 verbose dependent @zuu/bootstrap depends on @zuu/mirror
+68 silly isPackageDependentOf @zuu/bootstrap @zuu/owl
+69 verbose dependent @zuu/bootstrap depends on @zuu/owl
+70 silly isPackageDependentOf @zuu/bootstrap @zuu/vet
+71 verbose dependent @zuu/bootstrap depends on @zuu/vet
+72 silly isPackageDependentOf @zuu/ferret __
+73 silly isPackageDependentOf @zuu/ferret @zuu/bootstrap
+74 silly isPackageDependentOf @zuu/ferret @zuu/ferret
+75 silly isPackageDependentOf @zuu/mirror @zuu/ferret
+76 silly isPackageDependentOf @zuu/ferret @zuu/mink
+77 silly isPackageDependentOf @zuu/mirror @zuu/mink
+78 silly isPackageDependentOf @zuu/ferret @zuu/mirror
+79 verbose dependent @zuu/ferret depends on @zuu/mirror
+80 silly isPackageDependentOf @zuu/ferret @zuu/owl
+81 silly isPackageDependentOf @zuu/mirror @zuu/owl
+82 silly isPackageDependentOf @zuu/ferret @zuu/vet
+83 silly isPackageDependentOf @zuu/mirror @zuu/vet
+84 silly isPackageDependentOf @zuu/mink __
+85 silly isPackageDependentOf @zuu/mink @zuu/bootstrap
+86 silly isPackageDependentOf @zuu/mink @zuu/ferret
+87 silly isPackageDependentOf @zuu/mink @zuu/mink
+88 silly isPackageDependentOf @zuu/mink @zuu/mirror
+89 silly isPackageDependentOf @zuu/mink @zuu/owl
+90 silly isPackageDependentOf @zuu/mink @zuu/vet
+91 silly isPackageDependentOf @zuu/mirror __
+92 silly isPackageDependentOf @zuu/mirror @zuu/bootstrap
+93 silly isPackageDependentOf @zuu/mirror @zuu/ferret
+94 silly isPackageDependentOf @zuu/mirror @zuu/mink
+95 silly isPackageDependentOf @zuu/mirror @zuu/mirror
+96 silly isPackageDependentOf @zuu/mirror @zuu/owl
+97 silly isPackageDependentOf @zuu/mirror @zuu/vet
+98 silly isPackageDependentOf @zuu/owl __
+99 silly isPackageDependentOf @zuu/owl @zuu/bootstrap
+100 silly isPackageDependentOf @zuu/owl @zuu/ferret
+101 silly isPackageDependentOf @zuu/mirror @zuu/ferret
+102 silly isPackageDependentOf @zuu/vet @zuu/ferret
+103 silly isPackageDependentOf @zuu/mirror @zuu/ferret
+104 silly isPackageDependentOf @zuu/owl @zuu/mink
+105 silly isPackageDependentOf @zuu/mirror @zuu/mink
+106 silly isPackageDependentOf @zuu/vet @zuu/mink
+107 silly isPackageDependentOf @zuu/mirror @zuu/mink
+108 silly isPackageDependentOf @zuu/owl @zuu/mirror
+109 verbose dependent @zuu/owl depends on @zuu/mirror
+110 silly isPackageDependentOf @zuu/owl @zuu/owl
+111 silly isPackageDependentOf @zuu/mirror @zuu/owl
+112 silly isPackageDependentOf @zuu/vet @zuu/owl
+113 silly isPackageDependentOf @zuu/mirror @zuu/owl
+114 silly isPackageDependentOf @zuu/owl @zuu/vet
+115 verbose dependent @zuu/owl depends on @zuu/vet
+116 silly isPackageDependentOf @zuu/vet __
+117 silly isPackageDependentOf @zuu/vet @zuu/bootstrap
+118 silly isPackageDependentOf @zuu/vet @zuu/ferret
+119 silly isPackageDependentOf @zuu/vet @zuu/mink
+120 silly isPackageDependentOf @zuu/vet @zuu/mirror
+121 verbose dependent @zuu/vet depends on @zuu/mirror
+122 silly isPackageDependentOf @zuu/vet @zuu/owl
+123 silly isPackageDependentOf @zuu/vet @zuu/vet
+124 silly isPackageDependentOf @zuu/mirror @zuu/vet
+125 silly collectUpdates
+126 verbose has filtered update __
+127 verbose has filtered update @zuu/bootstrap
+128 verbose has filtered update @zuu/ferret
+129 verbose has filtered update @zuu/mink
+130 verbose has filtered update @zuu/mirror
+131 verbose has filtered update @zuu/owl
+132 verbose has filtered update @zuu/vet
+133 silly initialize success
+134 silly execute attempt
+135 silly runScriptSync preversion undefined
+136 silly runScriptSync preversion __
+137 silly runScriptSync version __
+138 silly runScriptSync preversion @zuu/bootstrap
+139 silly runScriptSync version @zuu/bootstrap
+140 silly runScriptSync preversion @zuu/ferret
+141 silly runScriptSync version @zuu/ferret
+142 silly runScriptSync preversion @zuu/mink
+143 silly runScriptSync version @zuu/mink
+144 silly runScriptSync preversion @zuu/mirror
+145 silly runScriptSync version @zuu/mirror
+146 silly runScriptSync preversion @zuu/owl
+147 silly runScriptSync version @zuu/owl
+148 silly runScriptSync preversion @zuu/vet
+149 silly runScriptSync version @zuu/vet
+150 silly runScriptSync version undefined
+151 info publish Publishing packages to npm...
+152 silly existsSync /Users/vex/p/zuu/packages/__/scripts/prepublish.js
+153 verbose execScript No prepublish script found at /Users/vex/p/zuu/packages/__/scripts/prepublish.js
+154 silly existsSync /Users/vex/p/zuu/packages/bootstrap/scripts/prepublish.js
+155 verbose execScript No prepublish script found at /Users/vex/p/zuu/packages/bootstrap/scripts/prepublish.js
+156 silly existsSync /Users/vex/p/zuu/packages/ferret/scripts/prepublish.js
+157 verbose execScript No prepublish script found at /Users/vex/p/zuu/packages/ferret/scripts/prepublish.js
+158 silly existsSync /Users/vex/p/zuu/packages/mink/scripts/prepublish.js
+159 verbose execScript No prepublish script found at /Users/vex/p/zuu/packages/mink/scripts/prepublish.js
+160 silly existsSync /Users/vex/p/zuu/packages/mirror/scripts/prepublish.js
+161 verbose execScript No prepublish script found at /Users/vex/p/zuu/packages/mirror/scripts/prepublish.js
+162 silly existsSync /Users/vex/p/zuu/packages/owl/scripts/prepublish.js
+163 verbose execScript No prepublish script found at /Users/vex/p/zuu/packages/owl/scripts/prepublish.js
+164 silly existsSync /Users/vex/p/zuu/packages/vet/scripts/prepublish.js
+165 verbose execScript No prepublish script found at /Users/vex/p/zuu/packages/vet/scripts/prepublish.js
+166 verbose publishing @zuu/mink
+167 silly publishTaggedInDir latest mink
+168 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mink' }
+169 verbose publishing @zuu/mirror
+170 silly publishTaggedInDir latest mirror
+171 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mirror' }
+172 error publish Retrying failed publish: @zuu/mink
+173 verbose publish error undefined
+174 verbose publishing @zuu/mink
+175 silly publishTaggedInDir latest mink
+176 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mink' }
+177 info published @zuu/mirror
+178 silly existsSync /Users/vex/p/zuu/packages/mirror/scripts/postpublish.js
+179 verbose execScript No postpublish script found at /Users/vex/p/zuu/packages/mirror/scripts/postpublish.js
+180 error publish Retrying failed publish: @zuu/mink
+181 verbose publish error undefined
+182 verbose publishing @zuu/mink
+183 silly publishTaggedInDir latest mink
+184 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mink' }
+185 error publish Retrying failed publish: @zuu/mink
+186 verbose publish error undefined
+187 verbose publishing @zuu/mink
+188 silly publishTaggedInDir latest mink
+189 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mink' }
+190 error publish Retrying failed publish: @zuu/mink
+191 verbose publish error undefined
+192 verbose publishing @zuu/mink
+193 silly publishTaggedInDir latest mink
+194 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mink' }
+195 error publish Ran out of retries while publishing @zuu/mink Error: Command failed: npm publish --tag latest
+195 error publish npm ERR! publish Failed PUT 402
+195 error publish npm ERR! code E402
+195 error publish npm ERR! You must sign up for private packages : @zuu/mink
+195 error publish
+195 error publish npm ERR! A complete log of this run can be found in:
+195 error publish npm ERR!     /Users/vex/.npm/_logs/2018-07-07T13_24_07_782Z-debug.log
+195 error publish
+195 error publish     at Promise.all.then.arr (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+195 error publish     at <anonymous>
+195 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
+196 error execute callback with error
+197 error Error: Command failed: npm publish --tag latest
+197 error npm ERR! publish Failed PUT 402
+197 error npm ERR! code E402
+197 error npm ERR! You must sign up for private packages : @zuu/mink
+197 error
+197 error npm ERR! A complete log of this run can be found in:
+197 error npm ERR!     /Users/vex/.npm/_logs/2018-07-07T13_24_07_782Z-debug.log
+197 error
+197 error     at Promise.all.then.arr (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+197 error     at <anonymous>

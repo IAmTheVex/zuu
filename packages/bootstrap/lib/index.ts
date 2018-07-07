@@ -1,0 +1,116 @@
+import { Application, Response, Request } from 'express';
+import * as express from "express";
+import expressPlaygroundMiddleware from "graphql-playground-middleware-express";
+
+import { ZuuOptions } from './Options';
+import { AbstractModule, ModuleLoader } from "./module";
+import { useExpressServer } from "@zuu/mink";
+import { GQLFactory } from "@zuu/owl";
+import { SubscriptionServer } from "subscriptions-transport-ws";
+import { EventBus, AbstractEventListener } from "@zuu/vet";
+import { ListeningEvent } from "./events/ListeningEvent";
+import { createConnection, ConnectionOptions, Connection } from "@zuu/ferret";
+import { ConnectionCreatedEvent } from "./events/ConnectionCreatedEvent";
+import { SubscriptionServerListeningEvent } from "./events/SubscriptionServerListeningEvent";
+import { createServer, Server } from "http";
+import { execute, subscribe } from "graphql";
+import { GQLHelper } from './GQLHelper';
+
+export * from "./events";
+export * from "./module";
+export * from "./Options";
+
+export * from "./GQLHelper";
+
+export class BootstrappedOptions {
+    private _options: ZuuOptions;
+
+    public constructor(options: ZuuOptions) {
+        options = options || {};
+        options.listeners = options.listeners || [];
+        options.server = options.server || {};
+        options.server.port = options.server.port || 4000;
+    
+        options.graph = options.graph || {};
+        options.resolvers = options.resolvers || [];
+        options.controllers = options.controllers || [];
+    
+        options.graph.queryEndpoint = GQLHelper.queryPath;
+        options.graph.subscriptionsEndpoint = GQLHelper.subscriptionsPath;
+        options.graph.playground = GQLHelper.playground;
+        options.graph.contextFiller = GQLHelper.contextFiller;
+        options.graph.subscriptionCurrentUserChecker = GQLHelper.subscriptionCurrentUserChecker;
+        
+        this._options = options;
+    }
+
+    public getOptions(): ZuuOptions {
+        return this._options;
+    }
+
+    public async run(app?: Application): Promise<{ app: Application, server: Server, subscriptionServer?: SubscriptionServer }> {
+        let options = this._options;
+
+        for (let i = 0; i < options.listeners.length; i++) {
+            EventBus.subscribe<any>(options.listeners[i]);
+        }
+    
+        if (options.resolvers.length != 0)
+            await GQLFactory.setup(options.resolvers);
+    
+        let connection: Connection;
+        if (typeof options.model != "undefined") connection = await createConnection(<ConnectionOptions>options.model);
+        else connection = await createConnection();
+        EventBus.emit(new ConnectionCreatedEvent(connection));
+    
+        if (!app) app = express();
+        let modules: AbstractModule[] = options.server.modules || [];
+        ModuleLoader.loadMany(modules);
+    
+        ModuleLoader.before(app);
+        useExpressServer(app, options);
+        ModuleLoader.after(app);
+    
+        if (typeof options.graph.playground != "undefined" && options.graph.playground != null) {
+            app.get(options.graph.playground, expressPlaygroundMiddleware({
+                endpoint: options.graph.queryEndpoint || "/",
+                subscriptionEndpoint: options.graph.subscriptionsEndpoint || "/"
+            }));
+        }
+    
+        let server = createServer(app);
+    
+        app.set("PORT", options.server.port);
+        await (() => { return new Promise($ => { server.listen(options.server.port, _ => { $(); }); }); })();
+        EventBus.emit(new ListeningEvent(app));
+    
+        let subscriptionServer: SubscriptionServer = undefined;
+    
+        if (typeof options.graph.subscriptionsEndpoint != "undefined" && options.graph.subscriptionsEndpoint != null && typeof GQLFactory.schema != "undefined" && GQLFactory.schema != null) {
+            let onConnect = options.graph.subscriptionCurrentUserChecker;
+            subscriptionServer = new SubscriptionServer(
+                { schema: GQLFactory.schema, execute, subscribe, onConnect },
+                { server, path: options.graph.subscriptionsEndpoint }
+            );
+            EventBus.emit(new SubscriptionServerListeningEvent(subscriptionServer));
+        }
+    
+        return { app, server, subscriptionServer };
+    }
+}
+
+export class Bootstrap {
+    private static _current: BootstrappedOptions;
+    
+    public static getActiveBootstrap(): BootstrappedOptions {
+        return this._current;
+    }
+
+    public static scope(options: ZuuOptions): BootstrappedOptions {
+        if(!this._current)
+            this._current = new BootstrappedOptions(options);
+        return this._current;    
+    } 
+}
+
+export * from "./controllers";
