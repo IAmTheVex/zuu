@@ -13,7 +13,7 @@ export class GQLHelper {
     public static queryPath;
     public static playground: string;
     public static subscriptionsPath: string;
-    public static contextFiller: (user, headers) => Promise<any> | any = (user, headers) => { return {}; };
+    public static contextFiller: (user, headers) => Promise<any> | any;
     public static subscriptionCurrentUserChecker?: (connectionParams: Object, webSocket: WebSocket, context: ConnectionContext) => Promise<any> | any;
 
     public static fill() {
@@ -21,10 +21,8 @@ export class GQLHelper {
     }
 
     public static assist(options: GQLOptions) {
-        this.queryPath = options.queryEndpoint;
-        this.subscriptionsPath = options.subscriptionsEndpoint;
-        this.playground = options.playground;
-        this.contextFiller = options.contextFiller || ((_, $) => { return {}; });
-        this.subscriptionCurrentUserChecker = options.subscriptionCurrentUserChecker;         
+        this.queryPath = this.queryPath || options.queryEndpoint;
+        this.subscriptionsPath = this.subscriptionsPath || options.subscriptionsEndpoint;
+        this.playground = this.playground || options.playground;
     }
 }

@@ -35,12 +35,15 @@ export class BootstrappedOptions {
         options.resolvers = options.resolvers || [];
         options.controllers = options.controllers || [];
     
-        options.graph.queryEndpoint = GQLHelper.queryPath;
-        options.graph.subscriptionsEndpoint = GQLHelper.subscriptionsPath;
-        options.graph.playground = GQLHelper.playground;
-        options.graph.contextFiller = GQLHelper.contextFiller;
-        options.graph.subscriptionCurrentUserChecker = GQLHelper.subscriptionCurrentUserChecker;
-        
+        options.graph.queryEndpoint = options.graph.queryEndpoint || GQLHelper.queryPath;
+        options.graph.subscriptionsEndpoint = options.graph.subscriptionsEndpoint || GQLHelper.subscriptionsPath;
+        options.graph.playground = options.graph.playground || GQLHelper.playground;
+        options.graph.contextFiller = options.graph.contextFiller || ((user, headers) => { return {}; });
+        options.graph.subscriptionCurrentUserChecker = options.graph.subscriptionCurrentUserChecker;
+     
+        GQLHelper.contextFiller = options.graph.contextFiller;
+        GQLHelper.subscriptionCurrentUserChecker = options.graph.subscriptionCurrentUserChecker;
+
         this._options = options;
     }
 
