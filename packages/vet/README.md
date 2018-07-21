@@ -6,6 +6,10 @@
 
 # @zuu/vet
 
+[![Version](https://img.shields.io/npm/v/@zuu/vet.svg)](https://npmjs.org/package/@zuu/vet)
+[![Downloads/week](https://img.shields.io/npm/dw/@zuu/vet.svg)](https://npmjs.org/package/@zuu/vet)
+[![License](https://img.shields.io/npm/l/@zuu/vet.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)
+
 ## What is Vet?
 Vet is a component of the Zuu framework designed to provide all the commons needed.
 

@@ -6,6 +6,10 @@
 
 # @zuu/mirror
 
+[![Version](https://img.shields.io/npm/v/@zuu/mirror.svg)](https://npmjs.org/package/@zuu/mirror)
+[![Downloads/week](https://img.shields.io/npm/dw/@zuu/mirror.svg)](https://npmjs.org/package/@zuu/mirror)
+[![License](https://img.shields.io/npm/l/@zuu/mirror.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)
+
 ## What is Mirror?
 Mirror is a very powerfull reflection api created for typescript, mainly used with the zuu framework (for dependency injection, assertion and other cool stuff).
 

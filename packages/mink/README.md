@@ -6,6 +6,10 @@
 
 # @zuu/mink 
 
+[![Version](https://img.shields.io/npm/v/@zuu/mink.svg)](https://npmjs.org/package/@zuu/mink)
+[![Downloads/week](https://img.shields.io/npm/dw/@zuu/mink.svg)](https://npmjs.org/package/@zuu/mink)
+[![License](https://img.shields.io/npm/l/@zuu/mink.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)
+
 ## What is Mink?
 Mink is.. AMAZING!!! No... For real now... It's a component of the Zuu framework responsable for the routing and the setup of the server (has drivers for express, koa and hapi). Also dows some sweet websocket stuff (baking service for OWL Subscriptions) :)
 

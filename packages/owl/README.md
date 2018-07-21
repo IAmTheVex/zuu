@@ -6,6 +6,10 @@
 
 # @zuu/owl
 
+[![Version](https://img.shields.io/npm/v/@zuu/owl.svg)](https://npmjs.org/package/@zuu/owl)
+[![Downloads/week](https://img.shields.io/npm/dw/@zuu/owl.svg)](https://npmjs.org/package/@zuu/owl)
+[![License](https://img.shields.io/npm/l/@zuu/owl.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)
+
 ## What is Owl?
 Is a component of the Zuu framework designed to be stacked on top of Mink and provide all the juicy, _nightly_, experimental code in the new GraphQL stack ;)
 

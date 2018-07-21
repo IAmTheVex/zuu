@@ -6,6 +6,10 @@
 
 # @zuu/bootstrap
 
+[![Version](https://img.shields.io/npm/v/@zuu/bootstrap.svg)](https://npmjs.org/package/@zuu/bootstrap)
+[![Downloads/week](https://img.shields.io/npm/dw/@zuu/bootstrap.svg)](https://npmjs.org/package/@zuu/bootstrap)
+[![License](https://img.shields.io/npm/l/@zuu/bootstrap.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)
+
 ## What is Bootstrap?
 Good question.. Bootstrap is a component of the Zuu framework that combines every other's component configuration object into a single object, making it easy to start with the framework. It also adds custom event listeners for Mink, Owl, Ferret and more! It also ties rogether all the DI containers into a single one, provided by Vet and made globaly available in the entire app.
 
