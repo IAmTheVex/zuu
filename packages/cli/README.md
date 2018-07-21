@@ -6,11 +6,11 @@
 
 # @zuu/cli
 
-Zuu&#39;s framework command line interface
-
 [![Version](https://img.shields.io/npm/v/@zuu/cli.svg)](https://npmjs.org/package/@zuu/cli)
 [![Downloads/week](https://img.shields.io/npm/dw/@zuu/cli.svg)](https://npmjs.org/package/@zuu/cli)
 [![License](https://img.shields.io/npm/l/@zuu/cli.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)
+
+Zuu&#39;s framework command line interface
 
 ### UNDER HEAVY DEVELOPMENT! DO NOT USE!
 
