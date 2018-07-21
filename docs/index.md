@@ -4,6 +4,8 @@
   </a>
 </div>
 
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
+
 Zuu is a web framework for the backend! Written in TypeScript and running on the NodeJS platform, it inspires beautiful and declarative code!
 
 It aims at providing the developer with all the tools needed to make a very powerful app using mainly declarative code. Just tell the framework what to do and when... don't worry about how it's done. It's mainly oriented on the API pattern but it can also do MVC.
@@ -18,6 +20,25 @@ The core components of Zuu are:
 5) Owl: Nightly juicy add-on for Mink that provides GraphQL bindings
 
 See more info about each down below. Also check the repo's `packages` directory for detailed information!
+
+## Quick start
+To install:
+```shell
+$ npm install --global @zuu/cli
+```
+
+To create a new project:
+```shell
+$ zuu new simple my-project
+$ cd my-project
+$ npm install
+```
+
+To run the project:
+```shell
+$ npm run compile
+$ npm start
+```
 
 ## Want to contribute?
 Here's how!

@@ -22,6 +22,25 @@ The core components of Zuu are:
 
 You can check each package in the `packages` directory for more information about each one. You can also check out the `demos` directory for some examples.
 
+## Quick start
+To install:
+```shell
+$ npm install --global @zuu/cli
+```
+
+To create a new project:
+```shell
+$ zuu new simple my-project
+$ cd my-project
+$ npm install
+```
+
+To run the project:
+```shell
+$ npm run compile
+$ npm start
+```
+
 ## Want to contribute?
 Here's how!
 <div align="center">
