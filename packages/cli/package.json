@@ -1,0 +1,69 @@
+{
+  "name": "@zuu/cli",
+  "description": "Zuu's framework command line interface",
+  "version": "4.0.1-rc6",
+  "author": {
+    "name": "Laurentiu Ciobanu |vex",
+    "email": "laurentiu@thevexis.me"
+  },
+  "bin": {
+    "zuu": "./bin/run"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.4.35",
+    "@oclif/config": "^1.6.33",
+    "@oclif/plugin-help": "^2.0.5",
+    "chalk": "^2.4.1",
+    "cli-ux": "^4.7.3",
+    "tslib": "^1.9.3",
+    "zup": "0.0.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.15.4",
+    "@oclif/test": "^1.1.0",
+    "@types/chai": "^4.1.4",
+    "@types/chalk": "^2.2.0",
+    "@types/mocha": "^5.2.4",
+    "@types/node": "^10.5.2",
+    "chai": "^4.1.2",
+    "globby": "^8.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "ts-node": "^6.2.0",
+    "typescript": "^2.9.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "zuu",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAmTheVex/zuu"
+  },
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
+    "posttest": "tsc -p test --noEmit",
+    "prepack": "rm -rf lib && tsc && oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
+    "prepare": "rm -rf lib && tsc",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}

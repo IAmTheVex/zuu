@@ -1,0 +1,15 @@
+{
+    "type": "sqlite",
+    "database": "[[=z.name]].sqlite",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "build/model/entities/**/*.js"
+    ],
+    "subscribers": [
+        "build/model/subscribers/**/*.js"
+    ],
+    "migrations": [
+        "build/model/migrations/**/*.js"
+    ]
+}

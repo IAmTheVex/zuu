@@ -1,0 +1,6 @@
+import { Controller } from "@zuu/mink";
+
+@Controller()
+export class [[=z.name]] {
+
+}
