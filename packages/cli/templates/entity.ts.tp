@@ -1,0 +1,9 @@
+import { Entity, PrimaryGeneratedColumn, BaseEntity } from "@zuu/ferret";
+
+@Entity()
+export class [[=z.name]] extends BaseEntity {
+
+    @PrimaryGeneratedColumn()
+    public id: number;
+
+}

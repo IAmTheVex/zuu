@@ -1,0 +1,12 @@
+{
+    "hash": {
+        "salt": {
+            "length": 16,
+            "secret": "i love cats"
+        }
+    },
+    "token": {
+        "expires": "1 day",
+        "secret": "i love cats"
+    }
+}

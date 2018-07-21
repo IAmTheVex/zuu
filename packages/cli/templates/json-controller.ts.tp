@@ -1,0 +1,6 @@
+import { JsonController } from "@zuu/mink";
+
+@JsonController()
+export class [[=z.name]] {
+
+}
