@@ -1,7 +1,6 @@
 node_modules/
 build/
 packages/__
-packages/ferret
 *.sqlite
 .DS_Store
 scripts/
