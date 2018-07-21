@@ -9,6 +9,14 @@
 ## What is Bootstrap?
 Good question.. Bootstrap is a component of the Zuu framework that combines every other's component configuration object into a single object, making it easy to start with the framework. It also adds custom event listeners for Mink, Owl, Ferret and more! It also ties rogether all the DI containers into a single one, provided by Vet and made globaly available in the entire app.
 
+## Want to contribute?
+Here's how!
+<div align="center">
+  <a href="https://github.com/IAmTheVex/zuu/blob/master/CONTRIBUTING.md">
+    <img src="https://github.com/IAmTheVex/zuu/raw/master/assets/branching.png">
+  </a>
+</div>
+
 ## The configuration object?
 There you go! :) Pretty self explanatory
 ```typescript

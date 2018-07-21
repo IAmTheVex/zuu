@@ -9,9 +9,16 @@
 ## What is Mink?
 Mink is.. AMAZING!!! No... For real now... It's a component of the Zuu framework responsable for the routing and the setup of the server (has drivers for express, koa and hapi). Also dows some sweet websocket stuff (baking service for OWL Subscriptions) :)
 
-Mink calls the smallest unit of organization a `Controller`.
+## Want to contribute?
+Here's how!
+<div align="center">
+  <a href="https://github.com/IAmTheVex/zuu/blob/master/CONTRIBUTING.md">
+    <img src="https://github.com/IAmTheVex/zuu/raw/master/assets/branching.png">
+  </a>
+</div>
 
 ## Controllers
+Mink calls the smallest unit of organization a `Controller`.
 
 ```typescript
 @Controller()

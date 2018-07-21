@@ -9,6 +9,14 @@
 ## What is Vet?
 Vet is a component of the Zuu framework designed to provide all the commons needed.
 
+## Want to contribute?
+Here's how!
+<div align="center">
+  <a href="https://github.com/IAmTheVex/zuu/blob/master/CONTRIBUTING.md">
+    <img src="https://github.com/IAmTheVex/zuu/raw/master/assets/branching.png">
+  </a>
+</div>
+
 ## Quick intro
 The vet in a zoo is like a... umm.... Whatever! Vet contains everything that all the other ~~ainmals~~ packages might need. This includes a global framework wide Event Bus with all the events handlers, custom events, customs local wide Event buses, configuration managers and configuration injectors, dependency injection, namespacing and scoping (ex: Singleton patterns already covered), debugging, debugger tags and log streams, async runtime management and long lasting tasks also, time tools, string formating tools, platform tools and other small tools.
 

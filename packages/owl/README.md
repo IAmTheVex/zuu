@@ -9,6 +9,14 @@
 ## What is Owl?
 Is a component of the Zuu framework designed to be stacked on top of Mink and provide all the juicy, _nightly_, experimental code in the new GraphQL stack ;)
 
+## Want to contribute?
+Here's how!
+<div align="center">
+  <a href="https://github.com/IAmTheVex/zuu/blob/master/CONTRIBUTING.md">
+    <img src="https://github.com/IAmTheVex/zuu/raw/master/assets/branching.png">
+  </a>
+</div>
+
 ## Quick intro
 Everyone loves GraphQL... for many reasons. It solves many of the REST's problems (underfetching, overfetching, unwanted resource access, unwanted resource fields exposure, the big number of request enpoints and many more...)
 

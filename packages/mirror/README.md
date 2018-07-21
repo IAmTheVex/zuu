@@ -9,6 +9,14 @@
 ## What is Mirror?
 Mirror is a very powerfull reflection api created for typescript, mainly used with the zuu framework (for dependency injection, assertion and other cool stuff).
 
+## Want to contribute?
+Here's how!
+<div align="center">
+  <a href="https://github.com/IAmTheVex/zuu/blob/master/CONTRIBUTING.md">
+    <img src="https://github.com/IAmTheVex/zuu/raw/master/assets/branching.png">
+  </a>
+</div>
+
 ## Usage
 The basic principle is easy. Decorations are attached to ```classes, properties, methods and method parameters``` and can be reflected after by a very powerfull reflection engine (that also provides aditional information about the types, names, positions, etc).
 
