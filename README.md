@@ -4,6 +4,9 @@
   </a>
 </div>
 
+
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
+
 Zuu is a web framework for the backend! Written in TypeScript and running on the NodeJS platform, it inspires beautiful and declarative code! Check out [the website](http://zuu.thevexis.me) for more info!
 
 It aims at providing the developer with all the tools needed to make a very powerful app using mainly declarative code. Just tell the framework what to do and when... don't worry about how it's done. It's mainly oriented on the API pattern but it can also do MVC.

@@ -6,6 +6,7 @@
 
 # @zuu/vet
 
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
 [![Version](https://img.shields.io/npm/v/@zuu/vet.svg)](https://npmjs.org/package/@zuu/vet)
 [![Downloads/week](https://img.shields.io/npm/dw/@zuu/vet.svg)](https://npmjs.org/package/@zuu/vet)
 [![License](https://img.shields.io/npm/l/@zuu/vet.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)

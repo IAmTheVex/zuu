@@ -4,6 +4,8 @@
   </a>
 </div>
 
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
+
 ### Welcome to the restroom of the animals :)
 Each ~~animal~~ package has it's own README
 

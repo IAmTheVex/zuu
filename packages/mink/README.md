@@ -6,6 +6,7 @@
 
 # @zuu/mink 
 
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
 [![Version](https://img.shields.io/npm/v/@zuu/mink.svg)](https://npmjs.org/package/@zuu/mink)
 [![Downloads/week](https://img.shields.io/npm/dw/@zuu/mink.svg)](https://npmjs.org/package/@zuu/mink)
 [![License](https://img.shields.io/npm/l/@zuu/mink.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)

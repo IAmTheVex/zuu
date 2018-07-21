@@ -6,6 +6,8 @@
 
 # @zuu/bootstrap
 
+
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
 [![Version](https://img.shields.io/npm/v/@zuu/bootstrap.svg)](https://npmjs.org/package/@zuu/bootstrap)
 [![Downloads/week](https://img.shields.io/npm/dw/@zuu/bootstrap.svg)](https://npmjs.org/package/@zuu/bootstrap)
 [![License](https://img.shields.io/npm/l/@zuu/bootstrap.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)

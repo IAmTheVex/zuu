@@ -1,6 +1,6 @@
 {
   "name": "@zuu/vet",
-  "version": "4.0.1-rc7",
+  "version": "4.0.1-rc8",
   "description": "Zuu's Common Components",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -32,7 +32,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/node": "^10.0.4",
-    "@zuu/mirror": "^4.0.1-rc7",
+    "@zuu/mirror": "^4.0.1-rc8",
     "reflect-metadata": "^0.1.12",
     "require-glob": "^3.2.0"
   },

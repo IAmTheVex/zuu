@@ -1,6 +1,6 @@
 {
   "name": "@zuu/ferret",
-  "version": "4.0.1-rc7",
+  "version": "4.0.1-rc8",
   "description": "Zuu's deafault ORM",
   "license": "MIT",
   "author": {
@@ -79,7 +79,7 @@
     "typescript": "^2.8.1"
   },
   "dependencies": {
-    "@zuu/mirror": "^4.0.1-rc7",
+    "@zuu/mirror": "^4.0.1-rc8",
     "app-root-path": "^2.0.1",
     "buffer": "^5.1.0",
     "chalk": "^2.3.2",
