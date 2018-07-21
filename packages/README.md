@@ -4,4 +4,5 @@
   </a>
 </div>
 
-### Each package has it's own README ;)
+### Welcome to the restroom of the animals :)
+Each ~~animal~~ package has it's own README
