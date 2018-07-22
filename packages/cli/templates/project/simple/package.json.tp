@@ -5,7 +5,9 @@
   "main": "build/index.js",
   "scripts": {
     "compile": "tsc",
-    "start": "node ."
+    "start": "node .",
+    "dev-start": "nodemon .",
+    "dev-compile": "tsc -w"
   },
   "author": "[[=z.author]]",
   "license": "[[=z.license]]",
