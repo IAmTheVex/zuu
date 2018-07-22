@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: sudo npm install --global mocha
-      - run: sudo npm install --global tsc
+      - run: sudo npm install --global typescript
       - run: sudo npm install --global lerna
       - run: lerna bootstrap
       - run: lerna run compile
