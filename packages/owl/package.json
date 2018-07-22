@@ -27,7 +27,7 @@
     "access": "public"
   },
   "scripts": {
-    "test": "tsc && mocha --file ./build/compiled/test/utils/test-setup.js --bail --recursive --timeout 30000  ./build/compiled/test",
+    "test": "tsc && mocha --bail --recursive --timeout 30000  ./build/test",
     "compile": "tsc"
   },
   "dependencies": {

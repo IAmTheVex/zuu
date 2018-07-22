@@ -14,8 +14,6 @@ const sleep = (time: number) => new Promise(resolve => setTimeout(resolve, time)
 describe("Controller responds with value when Authorization succeeds (async)", function () {
 
     before(() => {
-
-        // reset metadata args storage
         getMetadataArgsStorage().reset();
 
         @JsonController()
@@ -90,8 +88,6 @@ describe("Controller responds with value when Authorization succeeds (async)", f
 describe("Controller responds with value when Authorization succeeds (sync)", function () {
     
     before(() => {
-
-        // reset metadata args storage
         getMetadataArgsStorage().reset();
 
         @JsonController()
@@ -165,8 +161,6 @@ describe("Controller responds with value when Authorization succeeds (sync)", fu
 describe("Authorized Decorators Http Status Code", function () {
 
     before(() => {
-
-        // reset metadata args storage
         getMetadataArgsStorage().reset();
 
         @JsonController()
@@ -267,7 +261,6 @@ describe("Authorization checker allows to throw (async)", function() {
 
 describe("Authorization checker allows to throw (sync)", function() {
     before(() => {
-        // reset metadata args storage
         getMetadataArgsStorage().reset();
 
         @JsonController()

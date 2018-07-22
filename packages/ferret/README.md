@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/npm/l/@zuu/ferret.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)
 
 ## What is Ferret?
-Ferret is a fork of typeorm (an exceptionally good piece of software) that has modified dependency injection (to match the rest of the framework) and altered Database Drivers optimized for container based applications. It also has synced configuration and runtime with the rest of the framework. The default config file is `ferret.config.json`. The number of unit tests written is also bigger :)
+Ferret is a fork of typeorm (an exceptionally good piece of software) that has modified dependency injection (to match the rest of the framework) and altered Database Drivers optimized for container based applications. It also has synced configuration and runtime with the rest of the framework. The default config file is `ferret.config.json`.
 
 ## Want to contribute?
 Here's how!

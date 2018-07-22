@@ -14,11 +14,12 @@ It aims at providing the developer with all the tools needed to make a very powe
 It's based arround a powerful reflection API (@zuu/mirror) written to acomodate the new Metadata API is ESNext and the Decorators that TypeScript provides early access to!
 
 The core components of Zuu are:
-1) Mirror: Powerful reflection API for typescript
-2) Vet: Comon components (DI, Configuration, Runtime management, Event bus and more)
-3) Mink: Routing and serving
-4) Ferret: ORM (fork of typeorm)
-5) Owl: Nightly juicy add-on for Mink that provides GraphQL bindings
+1) CLI
+2) Mirror: Powerful reflection API for typescript
+3) Vet: Comon components (DI, Configuration, Runtime management, Event bus and more)
+4) Mink: Routing and serving
+5) Ferret: ORM (fork of typeorm)
+6) Owl: Nightly juicy add-on for Mink that provides GraphQL bindings
 
 You can check each package in the `packages` directory for more information about each one. You can also check out the `demos` directory for some examples.
 

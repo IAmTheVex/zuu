@@ -4,9 +4,6 @@
 			"path": "packages/bootstrap"
 		},
 		{
-			"path": "packages/__"
-		},
-		{
 			"path": "packages/ferret"
 		},
 		{
@@ -20,6 +17,9 @@
 		},
 		{
 			"path": "packages/vet"
+		},
+		{
+			"path": "packages/cli"
 		}
 	],
 	"settings": {}

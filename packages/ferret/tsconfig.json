@@ -19,9 +19,6 @@
         "noUnusedLocals": true
     },
     "exclude": [
-        "test",
-        "tmp",
-        "temp",
         "build",
         "node_modules"
     ]
