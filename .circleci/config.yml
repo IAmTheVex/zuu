@@ -6,8 +6,8 @@ jobs:
       - image: circleci/node:8
     steps:
       - checkout
-      - run: npm install --global mocha
-      - run: npm install --global tsc
-      - run: npm install --global lerna
+      - run: sudo npm install --global mocha
+      - run: sudo npm install --global tsc
+      - run: sudo npm install --global lerna
       - run: lerna bootstrap
       - run: lerna run compile
