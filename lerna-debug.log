@@ -3,8 +3,7 @@
 1 silly flags   'reject-cycles': false,
 1 silly flags   rejectCycles: false,
 1 silly flags   'skip-git': true,
-1 silly flags   skipGit: true,
-1 silly flags   always: true }
+1 silly flags   skipGit: true }
 2 verbose rootPath /Users/vex/p/zuu
 3 info version 2.11.0
 4 silly isInitialized
@@ -18,7 +17,7 @@
 12 verbose hasTags true
 13 silly getLastTag
 14 error initialize caught error
-15 error Error: fatal: No tags can describe 'b56a21f75fd8b270d188a03d11fa1199af3cc391'.
+15 error Error: fatal: No tags can describe '9a25a8c00d113af4c3f874ce238786d3264a1a95'.
 15 error Try --always, or create some tags.
 15 error
 15 error     at Function.module.exports.sync (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
