@@ -1,7 +1,7 @@
 {
   "name": "@zuu/cli",
   "description": "Zuu's framework command line interface",
-  "version": "4.0.1-rc8",
+  "version": "4.0.2",
   "author": {
     "name": "Laurentiu Ciobanu |vex",
     "email": "laurentiu@thevexis.me"

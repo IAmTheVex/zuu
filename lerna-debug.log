@@ -10,14 +10,14 @@
 5 silly isInitialized true
 6 silly existsSync /Users/vex/p/zuu/VERSION
 7 silly initialize attempt
-8 info current version 4.0.1-rc8
+8 info current version 4.0.2
 9 silly getUpdates
 10 info Checking for updated packages...
 11 silly hasTags
 12 verbose hasTags true
 13 silly getLastTag
 14 error initialize caught error
-15 error Error: fatal: No tags can describe '9a25a8c00d113af4c3f874ce238786d3264a1a95'.
+15 error Error: fatal: No tags can describe 'be619ac63b6c4c9281d82ee92d613d1a9c5e73a4'.
 15 error Try --always, or create some tags.
 15 error
 15 error     at Function.module.exports.sync (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
