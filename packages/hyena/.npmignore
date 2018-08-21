@@ -1,0 +1,8 @@
+node_modules/
+index.html
+server.js
+webpack.config.js
+www/
+*.scss
+*.css
+dist/sketch*.*

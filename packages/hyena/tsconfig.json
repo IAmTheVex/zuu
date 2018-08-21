@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "lib": ["es2017", "esnext.asynciterable", "dom"],
+    "declaration": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+// {
+//   "compilerOptions": {
+//     "target": "es6",
+//     "moduleResolution": "node",
+//     "module": "commonjs",
+//     "lib": ["es2017", "esnext.asynciterable", "dom"], 
+//     "experimentalDecorators": true,
+//     "emitDecoratorMetadata": true,
+//   },
+//   "exclude": [
+//     "./dist",
+//     "./node_modules"
+//   ]
+// }
