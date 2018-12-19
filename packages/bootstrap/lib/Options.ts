@@ -9,7 +9,15 @@ export interface ZuuOptions extends MinkOptions {
     model?: ConnectionOptions,
     server?: {
         port?: number,
-        modules?: AbstractModule[]
+        modules?: AbstractModule[],
+        ssl?: {
+            port: number,
+            credentials: {
+                key: string | Buffer,
+                cert: string | Buffer,
+                ca: string | Buffer
+            }
+        }
     },
     graph?: GQLOptions,
     resolvers?: Function[],

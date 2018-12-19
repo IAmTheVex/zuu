@@ -13,6 +13,7 @@ import { createConnection, ConnectionOptions, Connection } from "@zuu/ferret";
 import { ConnectionCreatedEvent } from "./events/ConnectionCreatedEvent";
 import { SubscriptionServerListeningEvent } from "./events/SubscriptionServerListeningEvent";
 import { createServer, Server } from "http";
+import * as https from "https";
 import { execute, subscribe } from "graphql";
 import { GQLHelper } from './GQLHelper';
 
@@ -51,7 +52,7 @@ export class BootstrappedOptions {
         return this._options;
     }
 
-    public async run(app?: Application): Promise<{ app: Application, server: Server, subscriptionServer?: SubscriptionServer }> {
+    public async run(app?: Application): Promise<{ app: Application, server: Server, https?: https.Server, subscriptionServer?: SubscriptionServer }> {
         let options = this._options;
 
         for (let i = 0; i < options.listeners.length; i++) {
@@ -82,9 +83,17 @@ export class BootstrappedOptions {
         }
     
         let server = createServer(app);
-    
+        let httpsServer: https.Server = null;
+
+        if(this._options.server.ssl) {
+            httpsServer = https.createServer(this._options.server.ssl.credentials, app);
+        }
+
         app.set("PORT", options.server.port);
         await (() => { return new Promise($ => { server.listen(options.server.port, _ => { $(); }); }); })();
+        if(!!httpsServer){
+            await (() => { return new Promise($ => { httpsServer.listen(options.server.ssl.port || 443, _ => { $(); }); }); })();
+        }
         EventBus.emit(new ListeningEvent(app));
     
         let subscriptionServer: SubscriptionServer = undefined;
@@ -93,12 +102,12 @@ export class BootstrappedOptions {
             let onConnect = options.graph.subscriptionCurrentUserChecker;
             subscriptionServer = new SubscriptionServer(
                 { schema: GQLFactory.schema, execute, subscribe, onConnect },
-                { server, path: options.graph.subscriptionsEndpoint }
+                { server: (!!httpsServer ? httpsServer : server), path: options.graph.subscriptionsEndpoint }
             );
             EventBus.emit(new SubscriptionServerListeningEvent(subscriptionServer));
         }
     
-        return { app, server, subscriptionServer };
+        return { app, server, https: httpsServer, subscriptionServer };
     }
 }
 

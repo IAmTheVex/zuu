@@ -186,7 +186,7 @@ temp/`;
     }
 
     protected static getUserEntityTemplate(database: string): string {
-        return `import {Entity, ${ database === "mongodb" ? "ObjectIdColumn, ObjectID" : "PrimaryGeneratedColumn" }, Column} from "@zuu/ferret-orm";
+        return `import {Entity, ${ database === "mongodb" ? "ObjectIdColumn, ObjectID" : "PrimaryGeneratedColumn" }, Column} from "@zuu/ferret";
 
 @Entity()
 export class User {
@@ -234,7 +234,7 @@ export const Routes = [{
     }
 
     protected static getControllerTemplate(): string {
-        return `import {getRepository} from "@zuu/ferret-orm";
+        return `import {getRepository} from "@zuu/ferret";
 import {NextFunction, Request, Response} from "express";
 import {User} from "../entity/User";
 
@@ -264,7 +264,7 @@ export class UserController {
     protected static getAppIndexTemplate(express: boolean): string {
         if (express) {
             return `import "reflect-metadata";
-import {createConnection} from "@zuu/ferret-orm";
+import {createConnection} from "@zuu/ferret";
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import {Request, Response} from "express";
@@ -315,7 +315,7 @@ createConnection().then(async connection => {
 
         } else {
             return `import "reflect-metadata";
-import {createConnection} from "@zuu/ferret-orm";
+import {createConnection} from "@zuu/ferret";
 import {User} from "./entity/User";
 
 createConnection().then(async connection => {
@@ -467,7 +467,7 @@ Steps to run this project:
 
         if (!packageJson.dependencies) packageJson.dependencies = {};
         Object.assign(packageJson.dependencies, {
-            "@zuu/ferret-orm": require("../../package.json").version,
+            "@zuu/ferret": require("../../package.json").version,
             "reflect-metadata": "^0.1.10"
         });
 

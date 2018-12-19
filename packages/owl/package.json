@@ -1,6 +1,6 @@
 {
   "name": "@zuu/owl",
-  "version": "4.0.2",
+  "version": "4.0.7",
   "description": "Zuu's Experimental GraphQL Implementation",
   "license": "MIT",
   "author": {
@@ -35,7 +35,7 @@
     "@types/graphql": "^0.13.1",
     "@types/node": "*",
     "@zuu/mirror": "^4.0.2",
-    "@zuu/vet": "^4.0.2",
+    "@zuu/vet": "^4.0.7",
     "class-validator": "^0.8.5",
     "glob": "^7.1.2",
     "graphql": "^0.13.2",

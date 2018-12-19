@@ -3,6 +3,7 @@ import {PlatformTools} from "../platform/PlatformTools";
 import {ConnectionOptionsEnvReader} from "./options-reader/ConnectionOptionsEnvReader";
 import {ConnectionOptionsYmlReader} from "./options-reader/ConnectionOptionsYmlReader";
 import {ConnectionOptionsXmlReader} from "./options-reader/ConnectionOptionsXmlReader";
+import * as path from 'path';
 
 export class ConnectionOptionsReader {
 
@@ -144,9 +145,9 @@ export class ConnectionOptionsReader {
 
     protected get baseDirectory(): string {
         if (this.options && this.options.root)
-            return this.options.root;
+            return path.join(this.options.root, '.config');
 
-        return PlatformTools.load("app-root-path").path;
+        return path.join(PlatformTools.load("app-root-path").path, '.config');
     }
 
     protected get baseConfigName(): string {

@@ -1,28 +1,49 @@
-0 silly input [ 'publish' ]
-1 silly flags { _: [ 'publish' ],
+0 silly input [ 'compile' ]
+1 silly flags { _: [ 'run' ],
 1 silly flags   'reject-cycles': false,
 1 silly flags   rejectCycles: false,
-1 silly flags   'skip-git': true,
-1 silly flags   skipGit: true }
+1 silly flags   script: 'compile',
+1 silly flags   args: [] }
 2 verbose rootPath /Users/vex/p/zuu
 3 info version 2.11.0
-4 silly isInitialized
-5 silly isInitialized true
-6 silly existsSync /Users/vex/p/zuu/VERSION
-7 silly initialize attempt
-8 info current version 4.0.2
-9 silly getUpdates
-10 info Checking for updated packages...
-11 silly hasTags
-12 verbose hasTags true
-13 silly getLastTag
-14 error initialize caught error
-15 error Error: fatal: No tags can describe 'be619ac63b6c4c9281d82ee92d613d1a9c5e73a4'.
-15 error Try --always, or create some tags.
-15 error
-15 error     at Function.module.exports.sync (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-15 error     at Function.execSync (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-15 error     at Function.getLastTag (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/lib/GitUtilities.js:162:53)
-15 error     at UpdatedPackagesCollector.collectUpdatedPackages (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/lib/UpdatedPackagesCollector.js:112:42)
-15 error     at UpdatedPackagesCollector.getUpdates (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/lib/UpdatedPackagesCollector.js:88:35)
-15 error     at PublishCommand.initialize (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/lib/commands/PublishCommand.js:275:67)
+4 silly existsSync /Users/vex/p/zuu/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInDir compile [] mink
+9 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mink' }
+10 silly runScriptInDir compile [] mirror
+11 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/mirror' }
+12 silly runScriptInDir compile [] ferret
+13 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/ferret' }
+14 silly runScriptInDir compile [] vet
+15 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/vet' }
+16 silly runScriptInDir compile [] owl
+17 silly getExecOpts { cwd: '/Users/vex/p/zuu/packages/owl' }
+18 error compile Errored while running script in '@zuu/owl'
+19 error execute callback with error
+20 error Error: Command failed: npm run compile
+20 error npm ERR! code ELIFECYCLE
+20 error npm ERR! errno 2
+20 error npm ERR! @zuu/owl@4.0.2 compile: `tsc`
+20 error npm ERR! Exit status 2
+20 error npm ERR!
+20 error npm ERR! Failed at the @zuu/owl@4.0.2 compile script.
+20 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+20 error
+20 error npm ERR! A complete log of this run can be found in:
+20 error npm ERR!     /Users/vex/.npm/_logs/2018-10-14T13_09_43_103Z-debug.log
+20 error
+20 error > @zuu/owl@4.0.2 compile /Users/vex/p/zuu/packages/owl
+20 error > tsc
+20 error
+20 error ../../node_modules/@types/mocha/index.d.ts(2680,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'beforeEach' must be of type 'Lifecycle', but here has type 'HookFunction'.
+20 error ../../node_modules/@types/mocha/index.d.ts(2698,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'afterEach' must be of type 'Lifecycle', but here has type 'HookFunction'.
+20 error ../../node_modules/@types/mocha/index.d.ts(2714,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'describe' must be of type 'Describe', but here has type 'SuiteFunction'.
+20 error ../../node_modules/@types/mocha/index.d.ts(2735,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'xdescribe' must be of type 'Describe', but here has type 'PendingSuiteFunction'.
+20 error ../../node_modules/@types/mocha/index.d.ts(2749,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'it' must be of type 'It', but here has type 'TestFunction'.
+20 error ../../node_modules/@types/mocha/index.d.ts(2763,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'test' must be of type 'It', but here has type 'TestFunction'.
+20 error ../../node_modules/@types/mocha/index.d.ts(2770,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'xit' must be of type 'It', but here has type 'PendingTestFunction'.
+20 error
+20 error     at Promise.all.then.arr (/Users/vex/.nvm/versions/node/v8.11.2/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+20 error     at <anonymous>

@@ -60,7 +60,7 @@ export class EntityCreateCommand {
     }
 
     protected static getTemplate(name: string): string {
-        return `import {Entity} from "@zuu/ferret-orm";
+        return `import {Entity} from "@zuu/ferret";
 
 @Entity()
 export class ${name} {

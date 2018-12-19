@@ -4,9 +4,9 @@ import * as path from "path";
 import { IConfig } from "./IConfig";
 
 const searchConfigFile = function (name: string): string {
-    let configFile = path.join(__dirname, name + '.config.json');
+    let configFile = path.join(__dirname, '.config', name + '.config.json');
     while (!fs.existsSync(configFile)) {
-        const fileOnParent = path.normalize(path.join(path.dirname(configFile), '..', name + '.config.json'));
+        const fileOnParent = path.normalize(path.join(path.dirname(configFile), '..', '..', '.config', name + '.config.json'));
         if (configFile === fileOnParent) {
             return null;
         }

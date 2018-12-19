@@ -1,6 +1,6 @@
 {
   "name": "@zuu/vet",
-  "version": "4.0.2",
+  "version": "4.0.7",
   "description": "Zuu's Common Components",
   "main": "build/index.js",
   "types": "build/index.d.ts",

@@ -57,7 +57,7 @@ export class SubscriberCreateCommand {
     }
 
     protected static getTemplate(name: string): string {
-        return `import {EventSubscriber, EntitySubscriberInterface} from "@zuu/ferret-orm";
+        return `import {EventSubscriber, EntitySubscriberInterface} from "@zuu/ferret";
 
 @EventSubscriber()
 export class ${name} implements EntitySubscriberInterface<any> {

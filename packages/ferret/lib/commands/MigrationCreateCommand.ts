@@ -59,7 +59,7 @@ export class MigrationCreateCommand {
     }
 
     protected static getTemplate(name: string, timestamp: number): string {
-        return `import {MigrationInterface, QueryRunner} from "@zuu/ferret-orm";
+        return `import {MigrationInterface, QueryRunner} from "@zuu/ferret";
 
 export class ${camelCase(name, true)}${timestamp} implements MigrationInterface {
 
