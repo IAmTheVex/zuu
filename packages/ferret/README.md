@@ -7,6 +7,7 @@
 # @zuu/ferret
 
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
+[![Buy me a coffe](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/iamthevex) 
 [![Version](https://img.shields.io/npm/v/@zuu/ferret.svg)](https://npmjs.org/package/@zuu/ferret)
 [![Downloads/week](https://img.shields.io/npm/dw/@zuu/ferret.svg)](https://npmjs.org/package/@zuu/ferret)
 [![License](https://img.shields.io/npm/l/@zuu/ferret.svg)](https://github.com/IAmTheVex/zuu/blob/master/package.json)

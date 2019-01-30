@@ -15,6 +15,6 @@ export class AuthedGraphQLController {
         @HeaderParams() headers: any
     ) {
         let context = { user, ...(await GQLHelper.contextFiller(user, headers)) };
-        return await GQLFactory.run(query, context, variables, operation);
+        return { ...await GQLFactory.run(query, context, variables, operation), __graph_result: true };
     }
 }

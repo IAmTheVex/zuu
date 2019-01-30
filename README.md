@@ -5,7 +5,8 @@
 </div>
 
 
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/) 
+[![Buy me a coffe](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/iamthevex) 
 
 Zuu is a web framework for the backend! Written in TypeScript and running on the NodeJS platform, it inspires beautiful and declarative code! Check out [the website](http://zuu.thevexis.me) for more info!
 

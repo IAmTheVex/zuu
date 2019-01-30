@@ -14,6 +14,6 @@ export class GraphQLController {
         @HeaderParams() headers: any
     ) {
         let context = { ...(await GQLHelper.contextFiller(null, headers)) };
-        return await GQLFactory.run(query, context, variables, operation);
+        return { ...await GQLFactory.run(query, context, variables, operation), __graph_result: true };
     }
 }

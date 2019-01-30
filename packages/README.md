@@ -5,6 +5,7 @@
 </div>
 
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=for-the-badge)](https://gitter.im/zuu-framework/)
+[![Buy me a coffe](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/iamthevex) 
 
 ### Welcome to the restroom of the animals :)
 Each ~~animal~~ package has it's own README
